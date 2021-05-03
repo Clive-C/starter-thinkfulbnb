@@ -44,7 +44,7 @@ main img {
 
 .item {
   flex: 1;
-  margin: 10px;
+  margin: 1%;
   
 }
 
@@ -63,7 +63,7 @@ header {
 
 .logo {
   font-family: "Pangolin", cursive;
-  font-size: 72px;
+  font-size: 48px;
   color: #fff;
 }
 
@@ -105,7 +105,7 @@ form {
   flex-direction: column;
   border: 2px solid #ff385c;
   padding: 10px;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 form label {
@@ -160,11 +160,20 @@ footer p {
   header nav {
     margin-top: 30px;
   }
- 
+  
+  .logo{
+    font-size: 72px;
+  }
+  
   .group{
     display: flex;
     flex-direction: row;
   }
+
+  form .group{
+    flex-direction: column;
+  }
+
   form .item{
     flex-direction: column;
     flex: 2;
@@ -181,5 +190,11 @@ footer p {
   
   .item1 {
     width: 49%;
+  }
+}
+@media all and (min-width: 970px){
+  form .group{
+    display: flex;
+    flex-direction: row;
   }
 }
